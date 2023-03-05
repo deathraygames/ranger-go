@@ -1,0 +1,183 @@
+body {
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-family: 'Mochiy Pop One', sans-serif;
+	/* font-family: 'Amatic SC', cursive; */
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	align-content: stretch;
+	max-width: 40em;
+	height: 100vh;
+	min-height: 90vh;
+	margin: 0 auto;
+	/* border-left: solid 1px #333;
+	border-right: solid 1px #333; */
+	text-align: left;
+	--spacing: 2vmin;
+}
+
+button {
+	font-size: 100%;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	align-content: stretch;
+	max-width: 100%;
+	height: 100%;
+	/* border: solid 1px red; */
+}
+
+.scene {
+	/* flex-grow: 6; */
+	/* border: solid 1px white; */
+	position: relative;
+	margin: var(--spacing);
+	width: 96vmin;
+	height: 96vmin;
+}
+
+.scene-gfx,
+.scene-overlay {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.scene-overlay {
+	font-family: 'Amatic SC', cursive;
+	font-size: 150%;
+	padding: 0.5em;
+}
+
+.scene-svg {
+	width: 100%;
+	height: 100%;
+	border: solid 1px rgba(255, 255, 255, 0.2);
+	border-bottom: solid 1px white;
+}
+
+.progress {
+	flex-grow: 2;
+	text-align: center;
+	margin: var(--spacing);
+	display: flex;
+	flex-direction: column;
+}
+
+.journey-progress {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.journey-distance {
+	display: flex;
+	justify-content: space-between;
+}
+
+.journey-bar-container {
+	position: relative;
+	margin-top: 1em;
+}
+
+.journey-orbs {
+	position: absolute;
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.journey-orb {
+	display: block;
+	position: absolute;
+	left: 0%;
+	top: -0.6em;
+	font-size: 90%;
+	width: 1.6em;
+	height: 1.6em;
+	margin: 0;
+	padding: 0;
+	border: solid 1px white;
+	border-radius: 1em;
+	background: black;
+}
+
+.journey-bar {
+	display: block;
+	height: .8vh;
+	min-height: 3px;
+	background-color: white;
+	transition: all 0.05s;
+}
+
+
+.controls {
+	flex-grow: 3;
+	/* border: solid 1px white; */
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	margin: var(--spacing);
+}
+
+.action-list {
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	gap: var(--spacing);
+}
+.action-list > li {
+	display: flex;
+	flex-grow: 1;
+	width: 25%;
+	
+}
+.action-placeholder {
+	/* border: dashed 1px white; */
+	height: 100%;
+	width: 100%;
+	border-radius: 1em;
+}
+.action {
+	display: flex;
+	flex-direction: column;
+	border: solid 3px white;
+	height: 100%;
+	width: 100%;
+	border-radius: 1em;
+	text-align: center;
+	background: black;
+	color: white;
+	transition: tranform 0.5s ease-in-out;
+}
+.action:hover {
+	transform: scale(1.02);
+}
+
+.everything-g {
+	transform: scale(0.5) translate(0px, 45vmin);
+}
+
+.ranger-g {
+}
